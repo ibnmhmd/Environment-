@@ -185,7 +185,7 @@ agm-map {
   .pt-xs-5 {
       padding-top: ($spacer * 5) !important;
   }
-  .about-page {
+  .about-page, .profile-page {
      padding-top: 5rem;
     }
 
@@ -193,7 +193,7 @@ agm-map {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 992px) {  
-    .about-page {
+    .about-page, .profile-page {
         padding-top: 7rem;
     }
     .pt-md-5 {
