@@ -1,0 +1,49 @@
+<section class="mt-md-0 mt-sm-0 mt-xs-0">
+      <div class="container text-center register-page text-uppercase">
+         <div class="row">
+           <div class="col-12">
+             <h3>Contact Us</h3>
+              <p class="mt-2 mb-3">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium recusandae quam.
+             </p>
+             <hr>
+          </div>
+        </div>
+      </div>
+
+          <div class="container">
+             <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                 <small class="d-block font-weight-bold font-italic">Please use the form below to send us a message .</small>
+                 <small class="d-block font-weight-bold font-italic text-danger">All fields are mandatory .</small>
+                 <form action="" class = "contact-form">
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your name">
+                    </div>
+                 
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Your message"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btns text-uppercase float-left">Send</button>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-4">
+              <!-- this creates a google map on the page with the given lat/lng from -->
+              <!-- the component as the initial center of the map: -->
+               <agm-map [latitude]="lat" [longitude]="lng">
+                  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+               </agm-map>
+            </div>
+          </div>
+        </div>
+</section>

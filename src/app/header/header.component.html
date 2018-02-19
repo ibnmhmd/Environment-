@@ -1,0 +1,57 @@
+<section id="main">
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark d-none d-xl-block d-lg-block">
+    <div class="container">
+        <a routerLink = '/' ><img src="../../assets/img/env.jpg" alt="" class="img-fluid rounded"></a>
+  
+        <div class="" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto" id = "foo">
+            <li class="nav-item">
+              <a class="nav-link " routerLink = '/' >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink = '/about-us'>About Us</a>
+            </li>
+            
+             <li class="nav-item">
+                <a class="nav-link" >Schedule</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" >Galery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" routerLink = '/register'>Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink = '/contact-us'>Contact us</a>
+              </li>
+          </ul>
+        </div>
+    </div>
+   
+  </nav>
+
+  <!-- mobile nav menu -->
+  <div id="mySidenav" class="sidenav d-xl-none d-xs-block d-sm-block d-md-block">
+    <a  class="closebtn" (click)="closeNav()">&times;</a>
+    <a  routerLink = '/' (click)="closeNav()" class="homeTab">Home</a>
+    <a  routerLink = '/about-us' (click)="closeNav()">About Us</a>
+    <a  routerLink = '/' (click)="closeNav()">Schedule</a>
+    <a  routerLink = '/' (click)="closeNav()">Galery</a>
+    <a routerLink = '/register' (click)="closeNav()">Register</a>
+    <a routerLink = '/contact-us' (click)="closeNav()">Contact us</a>
+  </div>
+  
+ 
+ <!-- mobile nav menu -->
+
+ <div class="container-fluid d-lg-none d-xl-none d-xs-block d-sm-block d-md-block  mobile-nav">
+   <div class="row">
+     <div class="col-6"><span  (click)="openNav()"><i class="bar fa fa-bars float-left"></i></span></div>
+     <div class="col-6 float-right"> <a routerLink = '/' ><img src="../../assets/img/env.jpg" alt="" class="img-fluid rounded float-right logo-img"></a></div>
+   </div>
+ </div>
+
+  <a href="#" class="back-to-top" data-toggle="tooltip" data-placement="top" title="Scroll Top">
+    <i class="fa fa-arrow-circle-up"></i>
+ </a>
+</section>

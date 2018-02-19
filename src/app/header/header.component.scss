@@ -1,0 +1,66 @@
+.navbar {
+    padding : 0;
+    position: fixed;
+    width: 100%;
+    background: #e9ecef !important;
+    .nav-link {
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase ;
+        &:hover {
+            color: brown;
+        }
+    }
+
+    .nav-item {
+        padding: 1.2rem 1rem ;
+        &:hover {
+            cursor: pointer;
+            border-bottom: 2px solid brown;
+            background: lightblue;
+            a{
+                color: brown;
+            }
+        }
+       a {
+           &:focus{
+               color: brown;
+           }
+       }
+    }
+}
+.active 
+{
+    border-bottom: 2px solid brown;
+    background: lightblue;
+    a{
+        color: brown !important;
+    }
+}
+.title {
+    font-weight: bold;
+}
+
+ p{
+    color: white;
+    font-weight: bold;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+
+    .bar{
+        font-size: 2rem ;
+        margin-top: 0.2rem;
+    }
+.logo-img {
+    width: 75px ;
+}
+.mobile-nav {
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 8px 8px 3px grey;
+    background: #e9ecef !important;
+}

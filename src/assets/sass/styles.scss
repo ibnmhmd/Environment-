@@ -1,0 +1,213 @@
+/* You can add global styles to this file, and also import other style files */
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+$spacer: 1rem;
+
+
+.home-page{
+    margin-top: 5rem;
+}
+
+.btns{
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+    font-weight: bold;
+}
+
+.btns:hover {
+    background: white;
+    color: brown;
+
+}
+
+.register-page{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+agm-map {
+    height: 440px;
+  }
+  textarea {
+      height: 16.5rem;
+  }
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #e9ecef; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding-top: 2rem;
+}
+.closebtn{
+    border: none !important;
+    color: red !important;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.homeTab, .closebtn {
+    padding-top: 0rem !important;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 14px;}
+    .sidenav a {font-size: 14px;}
+}
+
+
+.mt-0 {
+    margin-top: 0 !important;
+  }
+  
+  .ml-1 {
+    margin-left: ($spacer * .25) !important;
+  }
+  
+  .px-2 {
+    padding-left: ($spacer * .5) !important;
+    padding-right: ($spacer * .5) !important;
+  }
+  
+  .p-3 {
+    padding: $spacer !important;
+  }
+
+  .pt-md-5 {
+      padding-top: ($spacer * 5) !important;
+  }
+  .pt-sm-5 {
+    padding-top: ($spacer * 5) !important;
+}
+.pt-xs-5 {
+    padding-top: ($spacer * 5) !important;
+}
+
+.back-to-top {
+    display: inline-block;
+    background: none;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 8px 8px 3px grey;
+    position: fixed;
+    bottom: 11rem;
+    right: 50px;
+    width: 53px;
+    height: 60px; 
+    z-index: 1000; 
+    display: none;  
+    text-decoration: none;  
+    color: brown;  
+    background-color: lightblue; 
+  }
+    .back-to-top i 
+    {
+      font-size: 60px;
+    }
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    .wrapper {
+        width: 100% !important;
+    }
+
+    .home-page{
+        margin-top: 0rem;
+        padding-top: 3rem;
+    }
+
+    .register-page{
+        margin-top: 0rem;
+        padding-top: 5rem;
+    }
+
+    .back-to-top {
+        width: 27px;
+        height: 30px;
+    }
+    .back-to-top i {
+        font-size: 31px ;
+    }
+
+    .pt-md-5 {
+        padding-top: ($spacer * 5) !important;
+    }
+    .pt-sm-5 {
+      padding-top: ($spacer * 5) !important;
+  }
+  .pt-xs-5 {
+      padding-top: ($spacer * 5) !important;
+  }
+  .about-page {
+     padding-top: 5rem;
+    }
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 992px) {  
+    .about-page {
+        padding-top: 7rem;
+    }
+    .pt-md-5 {
+        padding-top: ($spacer * 2) !important;
+    }
+    .pt-sm-5 {
+      padding-top: ($spacer *2) !important;
+  }
+  .pt-xs-5 {
+      padding-top: ($spacer * 2) !important;
+  }
+
+  .register-page{
+    margin-top: 0rem;
+    padding-top: 7rem;
+}
+}
