@@ -16,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AgmCoreModule } from '@agm/core';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     RegisterComponent,
     ProfileComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
