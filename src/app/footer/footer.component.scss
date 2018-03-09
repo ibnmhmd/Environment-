@@ -4,7 +4,7 @@
 .footer-container i {
     font-size: 1.5rem;
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
         color: blue;
     }
 }
@@ -16,4 +16,7 @@
     color: brown;
     text-decoration: underline;
     cursor: pointer;
+}
+.anchor {
+    color: black;
 }

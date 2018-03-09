@@ -126,21 +126,18 @@ agm-map {
     background: none;
     border-radius: 10px;
     margin: 0;
-    box-shadow: 8px 8px 3px grey;
+    // box-shadow: 8px 8px 3px grey;
     position: fixed;
     bottom: 11rem;
     right: 50px;
-    width: 53px;
-    height: 60px; 
     z-index: 1000; 
     display: none;  
     text-decoration: none;  
-    color: brown;  
-    background-color: lightblue; 
+    color: black;  
   }
     .back-to-top i 
     {
-      font-size: 60px;
+      font-size: 50px;
     }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -188,7 +185,9 @@ agm-map {
   .about-page, .profile-page {
      padding-top: 5rem;
     }
-
+    strong{
+        font-size: 0.8rem;
+    }
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -210,4 +209,5 @@ agm-map {
     margin-top: 0rem;
     padding-top: 7rem;
 }
+
 }
