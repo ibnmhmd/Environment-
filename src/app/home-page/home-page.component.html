@@ -1,6 +1,6 @@
 <section class="home-page mt-md-0 mt-sm-0 mt-xs-0">
   <!-- home page carrousel starts-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -15,7 +15,7 @@
           <h3 class="text-uppercase title">Ecoconference Africa Summit 2018 </h3>
           <p>Ecoconference Africa Summit 2018</p>
 
-          <button routerLink = '/register' type="button" class="btn btn-primary btns text-uppercase">Register Now</button>
+          <button routerLink = '/register' type="button" class="btn btn-default btns text-uppercase">Register Now</button>
         </div>
 
       </div>
@@ -26,7 +26,7 @@
           <h3 class="text-uppercase title">Ecoconference Africa Summit 2018</h3>
           <p>Ecoconference Africa Summit 2018</p>
 
-          <button  routerLink = '/register' type="button" class="btn btn-primary btns text-uppercase">Register Now</button>
+          <button  routerLink = '/register' type="button" class="btn btn-default btns text-uppercase">Register Now</button>
         </div>
       </div>
        <div class="carousel-item">
@@ -36,7 +36,7 @@
           <h3 class="text-uppercase title">Ecoconference Africa Summit 2018</h3>
           <p>Ecoconference Africa Summit 2018</p>
 
-          <button routerLink = '/register' type="button" class="btn btn-primary btns text-uppercase">Register Now</button>
+          <button routerLink = '/register' type="button" class="btn btn-default btns text-uppercase">Register Now</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -46,7 +46,7 @@
           <h3 class="text-uppercase title">Ecoconference Africa Summit 2018</h3>
           <p>Ecoconference Africa Summit 2018</p>
 
-          <button routerLink = '/register' type="button" class="btn btn-primary btns text-uppercase">Register Now</button>
+          <button routerLink = '/register' type="button" class="btn btn-default btns text-uppercase">Register Now</button>
         </div>
       </div>
     </div>
@@ -58,19 +58,36 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+  </div> -->
   <!-- carrousel ends -->
 
+
+<div class="container videoHolder">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12">
+      <iframe id= "video" width="420" height="315" src="https://www.youtube.com/embed/XU_LdwSdbUU" frameborder="0" allowfullscreen width="100%" height="500px"></iframe>
+      <!-- <video controls  id="videoPlayer">
+        <source src="../../assets/vd.MP4" type="video/mp4" class="" />
+        Browser not supported
+    </video>  -->
+
+    </div>
+  </div>
+</div>
   <!--  about the conference  -->
   <div class="container mt-4">
-    <div class="row text-center text-uppercase">
+    <div class="row text-center">
        <div class="col-12">
-         <h5 class="headers">About the conference</h5>
-          <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Est voluptatibus nihil rem voluptate blanditiis dolor illum beatae tempore minima unde? 
-             Atque dolorem deleniti est voluptate voluptatibus neque nobis odit ipsam.</p>
+         <h5 class="headers text-uppercase about">About the conference</h5>
+          <p class="text-uppercase">
+            THEME "ECO- INNOVATION FOR  ENVIRONMENTAL
+            SUSTAINABILITY"</p>
+          <p class="">"ECO INNOVATION" means to pursue knowledge and practices that can lead
+            to more environmentally friendly and ecologically responsible decisions
+            and lifestyles, which can help protect the environment and sustain its
+            natural resources for current and future generations in NIGERIA.</p>
 
-             <button type="button" class="btn btn-primary btns mt-3" (click) = "viewSpeakers()" >Speakers @ The Event</button>
+             <button type="button" class="btn btns mt-3" (click) = "viewSpeakers()" >Speakers @ The Event</button>
       </div>
     </div>
   </div>
@@ -84,18 +101,13 @@
           <h5 class="headers">Startup Invitations </h5>
 
          <p class="mt-4 text-uppercase">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quaerat molestias natus voluptatum hic beatae ut, 
-              odio officiis accusamus illum, sint quas. Culpa quaerat dolore reiciendis
-             voluptates facere assumenda aspernatur vitae?.
-
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ratione, hic minima ab quaerat optio doloremque, libero 
-             explicabo temporibus harum sit voluptatum repellendus exercitationem!
-              Quibusdam voluptatum, quas facilis aspernatur sequi odio.
+          WE INVITE ALL PUBLIC, PRIVATE AND CO-OPERATE ORGANIZATIONS TO JOIN US IN 
+          ECO-INNOVATION CONFERENCE IN JULY 24-25 IN LAGOS NIGERIA FOR NEW 
+          PRODUCTS,PROCESSES AND SOLUTIONS TO REDUCE OUR IMPACT ON THE 
+          ENVIRONMENT.
         </p>
 
-        <button type="button" class="btn btn-primary btns mt-4 btn-lg" routerLink = "/contact-us">Contact Us</button>
+        <button type="button" class="btn btns mt-4 btn-lg" routerLink = "/contact-us">Contact Us</button>
       </div>
     </div>
   </div>
@@ -346,7 +358,7 @@
                      </figure>
 
                         <div class="middle">                   
-                             <a routerLink = '/profile/Amine' (click) ='viewProfile()' class="btn btn-primary btns">View Profile</a>                
+                             <a routerLink = '/profile/Amine' (click) ='viewProfile()' class="btn btn-default btns">View Profile</a>                
                         </div>
                        <hr>
                     </div>
@@ -356,7 +368,7 @@
                         <a href=""> <img class=" img-fluid rounded image" src="../../assets/img/rsz_o2.jpg"  alt=""></a>
                        </figure>
                        <div class="middle">                   
-                          <a href="" class="btn btn-primary btns" onclick="viewProfile()">View Profile</a>                
+                          <a href="" class="btn btn-default btns" onclick="viewProfile()">View Profile</a>                
                      </div>
                        <hr>
                     </div>
@@ -366,7 +378,7 @@
                          <a href=""><img class=" img-fluid rounded image" src="../../assets/img/rsz_o1.jpg"  alt=""></a>
                         </figure>
                         <div class="middle">                   
-                            <a href="" class="btn btn-primary btns" onclick="viewProfile()">View Profile</a>                
+                            <a href="" class="btn btn-default btns" onclick="viewProfile()">View Profile</a>                
                        </div>
                        <hr>
                     </div>
@@ -376,7 +388,7 @@
                         <a href=""> <img class=" img-fluid rounded image" src="../../assets/img/rsz_o2.jpg"  alt=""></a>
                        </figure>
                         <div class="middle">                   
-                            <a href="" class="btn btn-primary btns" onclick="viewProfile()">View Profile</a>                
+                            <a href="" class="btn btn-default btns" onclick="viewProfile()">View Profile</a>                
                         </div>
                        <hr>
                     </div>
@@ -388,7 +400,7 @@
                         </a>
                       </figure>
                       <div class="middle">                   
-                          <a href="" class="btn btn-primary btns" onclick="viewProfile()">View Profile</a>                
+                          <a href="" class="btn btn-default btns" onclick="viewProfile()">View Profile</a>                
                      </div>
                       <hr>
                      </div>
@@ -611,7 +623,7 @@
           <!-- end -->
 
           <!-- block -->
-           <!-- speakers at the event -->
+           <!-- speakers at the event
             <div class="container text-center text-uppercase mt-6">
                  <div class="row">
                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 border brochure bg-secondary mt-2">
@@ -620,18 +632,18 @@
 
                     </p>
 
-                    <a href="" class="btn btn-primary btns mb-5">Download Our Event Brochure</a> 
+                    <a href="" class="btn btn-default btns mb-5">Download Our Event Brochure</a> 
                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 bg-primary brochure mt-2">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 bg-default brochure mt-2">
                        <h4 class="mt-4 mb-4">what to expect</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit culpa inventore dolores quos praesentium repellat ullam, facilis illo magni harum, dolorum provident voluptate. Recusandae sequi modi quas pariatur sint fugit.
 
                       </p>
 
-                      <a href="" class="btn btn-primary btns mb-5">Download Our Event Brochure</a> 
+                      <a href="" class="btn btn-default btns mb-5">Download Our Event Brochure</a> 
                    </div>
                 </div>
-            </div>
+            </div> -->
 
             <div id = "myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">

@@ -1,4 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+
 declare var $: any;
 
 @Component({
@@ -7,10 +9,15 @@ declare var $: any;
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit, AfterViewInit {
+  safeURL: any = '';
+  videoURL = 'http://www.youtube.com/embed/dP15zlyra3c';
   ngAfterViewInit(): void {
+    
 }
 
-  constructor() { }
+constructor( private _sanitizer: DomSanitizer) {
+  this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoURL);
+}
 
   viewProfile () {
     localStorage.setItem( 'scrollerPosition', $(window).scrollTop() );
@@ -24,8 +31,9 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   }, 1000);
   }
   ngOnInit() {
-   console.log('pos', localStorage.getItem('scrollerPosition') );
+
    window.scroll( 0, 0 );
+   
   }
 
 }
